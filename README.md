@@ -1,81 +1,60 @@
-Praktikum 5
+Penjelasan Praktikum 5
 
 Nama  : Dedi Aldiansyah
 Nim   : 312210452
 Kelas : TI22B2
+Tugas : Bahasa Pemrograman
 
-Latihan
-
-Membuat sebuah list 5 elemen dengan nilai yang bebas dengan kode
-
-```
-a = [100,200,300,400,500]
-```
-
-![image](https://user-images.githubusercontent.com/48305171/201688240-5a50d10e-70d6-4466-89e8-7664a2f2cc66.png)
-
-Membuat kode akses list 
-
-![image](https://user-images.githubusercontent.com/48305171/201689412-83425c25-bdd4-4419-a578-ee6e042ef1d4.png)
-
-Disini untuk elemennya di beri tanda dan cara urutan di python di mulai dari angka 0 seperti 
-
-Elemen  [1, 2, 3, 4, 5]
-
-Urutan  [0  1  2  3  4]
-
-1. Menampilkan elemen ke 3
-
-Menggunakan kode program 
+Pertama kita membuat beberapa deklarasi terlebih dahulu
 
 ```
-print(a[2])
+nama = []
+nim = []
+tugas = []
+uts = []
+uas = []
 ```
 
-![image](https://user-images.githubusercontent.com/48305171/201690591-a602659d-00eb-4d6e-94b0-27f982568d23.png)
+![image](https://user-images.githubusercontent.com/48305171/202936863-9653f111-d609-4ea1-ab4d-f1f07e5a8062.png)
 
 
-2. Menampilkan elemen 2 sampai 4
-
-Menggunakan kode program
+lalu kita buat program input "Tambah data (y/t)?" dengan menggunakan perintah while, jika anda menekan huruf t makan perintah while akan berhenti "break" dan akan lanjut ke perintah berikutnya, jika anda menekan y maka program akan mengeksekusi input yang anda masukan untuk dimasukan ke dalam List kosong tersebut menggunakan perintah "append", sesuai dengan variabel List yang terhubung dengan perintah input pada masing masing data tersebut, lalu program akan mengulang ke input.
 
 ```
-print(a[1:4])
+while True:
+    nama_input = input("Nama  : ")
+    nim_input = input("Nim   : ")
+    tugas_input = int(input("Tugas : "))
+    uts_input = int(input("UTS   : "))
+    uas_input = int(input("UAS   : "))
+    tanya = input("Tambah data(y/t)? ")
+    nama.append(nama_input)
+    nim.append(nim_input)
+    tugas.append(tugas_input)
+    uts.append(uts_input)
+    uas.append(uas_input)
+    if tanya == 't':
+        break
 ```
 
-![image](https://user-images.githubusercontent.com/48305171/201690937-50dd4774-a5ae-4932-98c5-1532ac79c9b5.png)
+![image](https://user-images.githubusercontent.com/48305171/202937794-6219d473-7b3c-419b-9cbf-6ca3b8b5c681.png)
 
-3. Menampilkan elemen terakhir
+Dengan menggunakan for, program akan melakukan perulangan dan membuat baris berdasarkan berapa banyak input di "list nama" >>for i in range(len(nama)): .
+Nilai i akan ditambah 1, dengan menghitung berapa banyak jumlah list di variabel "nama", jika anda menginputkan tiga buah nama, maka penambahan nilai i akan di ulang sebanyak tiga kali, sehingga menghasilkan deret angka 1,2,3 >>print("|",i+1,end="").
 
-Menggunakan kode program
+![image](https://user-images.githubusercontent.com/48305171/202937982-890e0ced-83f6-4059-947e-9da96866bc3f.png)
 
-```
-print(a[4])
-```
+Selanjutnya program akan menampilkan semua nilai yang telah kaliam tambahkan tadi
 
-![image](https://user-images.githubusercontent.com/48305171/201691583-f18bf7da-4cbb-4411-8317-6c1a1bdf337e.png)
+Program akan memanggil data nama,nim,tugas,uts,uas.
+Lalu program akan meletakan data tersebut pada baris berdasarkan variabel "i", jika anda menginputkan dua buah nama maka akan tampil.
+1 nama1 nim1
+2 nama2 nim2
+Begitu pula data yang lain.
+8.Untuk menampilkan nilai Akhir, program akan mengambil nilai rata rata dari nilai tugas,uts,uas dengan cara menambahkan data-data sesuai dengan index dari variabel "i".
 
-Mengubah Elemen List
+tugas1+uts1+uas1/3
+tugas2+uts2+uas2/3
+Lalu Program akan mengoutputkan semua data yang telah di olah.
 
-1. Mengubah elemen 4 dengan nilai lainnya
-
-Menggunakan kode program
-
-```
-a[3] = 123
-```
-
-![image](https://user-images.githubusercontent.com/48305171/201692804-fa5f672c-1dbb-4147-8b6d-c70eda74b7c4.png)
-
-2. Mengubah elemen ke 4 sampai elemen terakhir
-
-Menggunakan kode program
-
-```
-a[3:4] = [123, 456]
-```
-
-![image](https://user-images.githubusercontent.com/48305171/201693535-9be00cc9-aa90-4322-8d57-20e3dbebeff7.png)
-
-Menambahkan Elemen List
 
