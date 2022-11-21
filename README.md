@@ -112,6 +112,10 @@ print("=====================================================================")
 
 ![image](https://user-images.githubusercontent.com/48305171/202944182-79777247-601b-4067-95d2-8b0a27cf68ee.png)
 
+Hasil program
+
+![image](https://user-images.githubusercontent.com/48305171/202945808-1a9e7433-b0c0-4c89-ad73-d910eb037106.png)
+
 
 Flowchart program di atas
 
