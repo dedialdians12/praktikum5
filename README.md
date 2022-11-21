@@ -47,14 +47,28 @@ Nilai i akan ditambah 1, dengan menghitung berapa banyak jumlah list di variabel
 Selanjutnya program akan menampilkan semua nilai yang telah kaliam tambahkan tadi
 
 Program akan memanggil data nama,nim,tugas,uts,uas.
-Lalu program akan meletakan data tersebut pada baris berdasarkan variabel "i", jika anda menginputkan dua buah nama maka akan tampil.
+
+Lalu program akan meletakan data tersebut pada baris berdasarkan variabel "i", jika kalian menginputkan dua buah nama maka akan tampil.
+
 1 nama1 nim1
+
 2 nama2 nim2
+
 Begitu pula data yang lain.
-8.Untuk menampilkan nilai Akhir, program akan mengambil nilai rata rata dari nilai tugas,uts,uas dengan cara menambahkan data-data sesuai dengan index dari variabel "i".
+
+Untuk menampilkan nilai Akhir, program akan mengambil nilai rata rata dari nilai tugas,uts,uas dengan cara menambahkan data-data sesuai dengan index dari variabel "i".
 
 tugas1+uts1+uas1/3
-tugas2+uts2+uas2/3
-Lalu Program akan mengoutputkan semua data yang telah di olah.
 
+tugas2+uts2+uas2/3
+
+Lalu Program akan mengoutputkan semua data yang telah di olah dengan program
+
+```
+
+```
+
+Flowchart program di atas
+
+![image](https://user-images.githubusercontent.com/48305171/202943436-f760d930-9d1e-41f3-a092-28cbeedb0272.png)
 
