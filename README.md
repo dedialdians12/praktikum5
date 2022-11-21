@@ -65,8 +65,53 @@ tugas2+uts2+uas2/3
 Lalu Program akan mengoutputkan semua data yang telah di olah dengan program
 
 ```
+print("""
+=====================================================================
+| No |     Nama      |    NIM    |  Tugas  |  UTS  |  UAS  |  Akhir |
+=====================================================================""")
 
+for i in range(len(nama)):
+    print("|", i + 1, end="")
+    if i < 9:
+        print("  |", end="")
+    else:
+        print(" |", end="")
+
+    print(" " + nama[i], end="")
+    for j in range(14 - len(nama[i])):
+        print(" ", end="")
+
+    print("|  " + nim[i], end="")
+    for k in range(9 - len(nim[i])):
+        print(" ", end="")
+
+    print("|  " + str(tugas[i]), end="")
+    for l in range(7 - len(str(tugas[i]))):
+        print(" ", end="")
+
+    print("|  " + str(uts[i]), end="")
+    for m in range(5 - len(str(uts[i]))):
+        print(" ", end="")
+
+    print("|  " + str(uas[i]), end="")
+    for n in range(5 - len(str(uas[i]))):
+        print(" ", end="")
+
+    akhir = round((float(tugas[i] * 0.3) + float(uts[i] * 0.35) + float(uas[i] * 0.35)), 2)
+
+    print("|  " + str(akhir), end="")
+    for o in range(6 - len(str(akhir))):
+        print(" ", end="")
+
+    print("|")
+
+print("=====================================================================")
 ```
+
+![image](https://user-images.githubusercontent.com/48305171/202944165-76db7c6b-5841-41c2-a446-db7968ac560d.png)
+
+![image](https://user-images.githubusercontent.com/48305171/202944182-79777247-601b-4067-95d2-8b0a27cf68ee.png)
+
 
 Flowchart program di atas
 
